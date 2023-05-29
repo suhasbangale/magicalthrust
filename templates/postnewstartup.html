@@ -1,0 +1,246 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Startup at Magical Thrust</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/common.css' %}">
+    <link rel="stylesheet" href="{% static 'css/jobPost.css' %}">
+
+</head>
+<body>
+    
+    <!-- Navbar -->
+
+    <section class="nav-section">
+        <div class="container nav-container">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                  <a class="navbar-brand brand-name" href="/home">
+                    <!-- <img class="brand-logo" src="images/brandLogo.png" alt="brand logo">
+                    &nbsp; -->
+                    Magical Thrust</a>
+
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                  <div class="collapse justify-content-end navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link navbar-item" href="/home">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link navbar-item" href="/insights">Insights</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link navbar-item dropdown-toggle" href="" data-bs-toggle="dropdown" aria-expanded="false">Startups Ecosystem</a>
+                        <ul class="dropdown-menu shadow nav-eco-dropdown">
+                          <li><a class="dropdown-item" href="/startups">Startups</a></li>
+                          <li><a class="dropdown-item" href="/angels">Angels</a></li>
+                          <li><a class="dropdown-item" href="/incubators">Incubators</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active-navbar-item" href="/jobs">Jobs</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link navbar-item" href="/feed">Feed</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <img src="{% static 'images/avatar.png' %}" alt="profile picture" class="profile-on-nav ">
+                        </a>
+                        <ul class="dropdown-menu shadow-lg profile-dropdown">
+                          <li><a class="dropdown-item drop-item" href="/profile/{{user.username}}">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                              <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                            </svg>
+                            &nbsp;
+                            Profile</a></li>
+                          <li><a class="dropdown-item drop-item" href="/settings">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+                              <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+                            </svg>
+                            &nbsp;
+                            Settings</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item drop-item" href="/logout">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-power" viewBox="0 0 16 16">
+                              <path d="M7.5 1v7h1V1h-1z"/>
+                              <path d="M3 8.812a4.999 4.999 0 0 1 2.578-4.375l-.485-.874A6 6 0 1 0 11 3.616l-.501.865A5 5 0 1 1 3 8.812z"/>
+                            </svg>
+                            &nbsp;
+                            Logout</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                    
+                  </div>
+
+                </div>
+              </nav>
+        </div>
+    </section>
+
+    <br>
+
+    <!-- Breadcump -->
+    <div class="container job-post-container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb breadcrumb-chevron">
+                <li class="breadcrumb-item">
+                    <a class="link-body-emphasis fw-semibold text-decoration-none" href="/home">Home</a>
+                  </li>
+              <li class="breadcrumb-item">
+                <a class="link-body-emphasis fw-semibold text-decoration-none" href="/startups">Startups</a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Add Startup
+              </li>
+            </ol>
+        </nav>
+    </div>
+
+    <!-- JOB POST form -->
+
+    <div class="container job-post-container">
+        <div class="card shadow job-post-card">
+            <div class="card-body">
+              <h4 class="card-title">Add your Startup here!</h4>
+              <br>
+
+              <form action="startupupload" method="POST" enctype="multipart/form-data" class="row g-3">
+                {% csrf_token %}
+                <div class="col-md-4">
+                  <label for="startupname" class="form-label">Startup Name</label>
+                  <input type="text" class="form-control" id="startupname" name="startupname" placeholder="e.g. Ronin Inc.">
+                </div>
+
+                <div class="col-md-4">
+                  <label for="startupsector" class="form-label">Startup Sector</label>
+                  <input type="text" class="form-control" id="startupsector" name="startupsector" placeholder="Agriculture and Agri Tech">
+                </div>
+
+                <div class="col-md-4">
+                  <label for="startuplocation" class="form-label">Location</label>
+                  <input type="text" class="form-control" id="startuplocation" name="startuplocation" placeholder="Location of your Startup">
+                </div>
+
+                <div class="col-12">
+                  <label for="startupbio" class="form-label">About Startup</label>
+                  <input type="text" class="form-control" id="startupbio" name="startupbio" placeholder="Write in short about your Startup">
+                </div>
+
+                <div class="col-md-3">
+                  <label for="startupestablishment" class="form-label">Establishment</label>
+                  <input type="text" class="form-control" id="startupestablishment" name="startupestablishment" placeholder="Foundation Year">
+                </div>
+
+                <div class="col-md-3">
+                  <label for="startupcin" class="form-label">CIN Number</label>
+                  <input type="text" class="form-control" id="startupcin" name="startupcin" placeholder="CIN Number">
+                </div>
+
+                <div class="col-md-3">
+                  <label for="startupincorporation" class="form-label">Incorporation Type</label>
+                  <input type="text" class="form-control" id="startupincorporation" name="startupincorporation" placeholder="e.g. Pvt. Ltd.">
+                </div>
+
+                <div class="col-md-3">
+                  <label for="startuppatents" class="form-label">Number of Patents</label>
+                  <input type="text" class="form-control" id="startuppatents" name="startuppatents" placeholder="Patents Published">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="startupwebsite" class="form-label">Startup Website</label>
+                  <input type="text" class="form-control" id="startupwebsite" name="startupwebsite" placeholder="Website of your Startup">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="startuplinkedin" class="form-label">Linkedin URL</label>
+                  <input type="text" class="form-control" id="startuplinkedin" name="startuplinkedin" placeholder="Linkedin URL of your Startup">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="startupinstagram" class="form-label">Instagram URL</label>
+                  <input type="text" class="form-control" id="startupinstagram" name="startupinstagram" placeholder="Instagram URL of your Startup">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="startupyoutube" class="form-label">YouTube URL</label>
+                  <input type="text" class="form-control" id="startupyoutube" name="startupyoutube" placeholder="YouTube URL of your Startup">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="startupfocusarea" class="form-label">Focus Area</label>
+                  <input type="text" class="form-control" id="startupfocusarea" name="startupfocusarea" placeholder="Main Focus Area of your Startup">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="startupservices" class="form-label">Service Name</label>
+                  <input type="text" class="form-control" id="startupservices" name="startupservices" placeholder="Service provided by your Startup">
+                </div>
+
+                <hr>
+
+                <div class="col-md-6">
+                  <label for="startupfoundername" class="form-label">Founder's Name</label>
+                  <input type="text" class="form-control" id="startupfoundername" name="startupfoundername" placeholder="First and Last names of Founder">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="startupfoundereducation" class="form-label">Founder's Education</label>
+                  <input type="text" class="form-control" id="startupfoundereducation" name="startupfoundereducation" placeholder="Education of Founder">
+                </div>
+
+                <div class="col-md-4">
+                  <label for="startupfounderage" class="form-label">Founder's Age</label>
+                  <input type="text" class="form-control" id="startupfounderage" name="startupfounderage" placeholder="Age of Founder">
+                </div>
+
+                <div class="col-md-4">
+                  <label for="startupfounderexperience" class="form-label">Founder's Experience</label>
+                  <input type="text" class="form-control" id="startupfounderexperience" name="startupfounderexperience" placeholder="Experience of Founder">
+                </div>
+
+                <div class="col-md-4">
+                  <label for="startupfounderequity" class="form-label">Founder's Equity</label>
+                  <input type="text" class="form-control" id="startupfounderequity" name="startupfounderequity" placeholder="Equity of Founder">
+                </div>
+
+                <div class="d-grid">
+                  <button type="submit" class="btn job-post-upload-button">Add Startup</button>
+                </div>
+              </form>
+            </div>
+          </div>
+    </div>
+
+    <br><br><br>
+    
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+    <!-- Bootstrap JavaScript -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+</body>
+</html>
