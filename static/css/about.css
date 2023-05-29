@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+    --pale-blue: hsl(255, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(255, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+    --hovered-blue: #6C7AFA;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+}
+
+.main-head {
+    padding-top: 50px;
+    color: #182747;
+}
+
+.main-head strong {
+    color: #6828F5;
+}
+
+.about-card-title {
+    color: #14213d;
+}
+
+.about-card {
+    border: none;
+    background-color: #f6f7ff00;
+    color: #545E7B;
+    text-align: justify;
+}
+
+.about-card li {
+    margin-bottom: 10px;
+}
+
+.about-card h3 {
+    color: #6828F5;
+}

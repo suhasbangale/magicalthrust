@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    background-color: #e9ecef;
+}
+
+.all-containers {
+    max-width: 1100px;
+}
+
+.nav-section {
+    background-color: #f6f7ff;
+    height: 65px;
+}
+
+.nav-container {
+    max-width: 1100px;
+}
+
+.brand-name {
+    font-size: x-large;
+    font-weight: 600;
+    color: #14213d;
+}
+
+/* .brand-logo{
+    width: 35px;
+} */
+
+.profile-on-nav {
+    width: 30px;
+    border-radius: 50%;
+}
+
+.active-navbar-item {
+    font-size: 15px;
+    font-weight: 600;
+    margin-right: 20px;
+    color: #6828F5;
+}
+
+.active-navbar-item:hover {
+    color: #6828F5;
+}
+
+.navbar-item {
+    font-size: 15px;
+    font-weight: 600;
+    margin-right: 20px;
+    color: #7280A7;
+}
+
+.navbar-item:hover {
+    font-size: 15px;
+    font-weight: 600;
+    color: #6828F5;
+}
+
+.profile-dropdown {
+    border: none;
+    background-color: #fff;
+}
+
+.drop-item {
+    font-size: 15px;
+    font-weight: 600;
+    color: #7280A7;
+}
+
+.drop-item:hover {
+    color: #3b4ef8;
+    background-color: white;
+    transition: 0.3s ease-in-out;
+}
+
+
+
+/* Global Footer */
+
+.global-footer {
+    background-color: #1D2235;
+}
+
+.foot-head {
+    color: white;
+}
+
+.foot-text {
+    color: #D8E5FF;
+}
+
+.social-icons-div {
+    color: #f6f7ff;
+}
+
+.foot-list-head {
+    color: white;
+    font-size: 18px;
+}
+
+.foot-list {
+    color: #f6f7ff;
+    font-size: 16px;
+}
+
+.foot-list a {
+    text-decoration: none;
+    color: #D8E5FF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

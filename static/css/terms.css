@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+    --pale-blue: hsl(255, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(255, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+    --hovered-blue: #6C7AFA;
+    --theme-violet: #6828F5;
+    --theme-blue: #0E61FF;
+    --theme-orange: #FF701F;
+    --theme-violet-hover: #8B56FF;
+    --nav-color: #F6F7FF;
+    --cancel-color: #939CB5;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.terms-card {
+    background-color: var(--nav-color);
+    border: none;
+    margin-top: 20px;
+}
+
+.terms-card:hover {
+    scale: 1.02;
+    transition: 0.6s ease-in-out;
+}
+
+.terms-card-title {
+    color: var(--theme-violet);
+}
+
+.terms-card-text {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--desaturated-blue);
+    text-align: justify;
+}
+
+
+.text-link {
+    color: var(--theme-violet);
+    text-decoration: none;
+}
+
+.text-link:hover {
+    color: var(--theme-violet-hover);
+}
+
+.page-title {
+    font-weight: 600;
+    margin-top: 15px;
+    color: #14213d;
+}

@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+:root {
+    --pale-blue: hsl(255, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(255, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+    --hovered-blue: #6C7AFA;
+
+    --theme-violet: #6828F5;
+    --theme-blue: #0E61FF;
+    --theme-orange: #FF701F;
+
+    --theme-violet-hover: #8B56FF;
+
+    --nav-color: #F6F7FF;
+}
+
+
+body {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.jobs-head-line {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--desaturated-blue);
+}
+
+.job-card {
+    border: none;
+    background-color: var(--nav-color);
+    /* margin-bottom: 15px; */
+}
+
+.job-role {
+    color: #14213d;
+    font-weight: 600;
+}
+
+.job-post-by {
+    color: #3E5381;
+    margin-bottom: 15px;
+}
+
+
+.job-things {
+    color: var(--desaturated-blue);
+    vertical-align: bottom;
+}
+
+.about-job {
+    color: #3E5381;
+}
+
+.apply-for-job-button button {
+    padding: 5px 15px;
+    color: white;
+    font-weight: 600;
+    background-color: var(--theme-violet);
+    border: none;
+    border-radius: 5px;
+}
+
+.apply-for-job-button button:hover {
+    background-color: var(--theme-violet-hover);
+    scale: 1.1;
+    transition: 0.6s ease;
+}
+
+.filter-title {
+    text-decoration: none;
+    color: #14213d;
+    font-weight: 600;
+
+}
+
+.collapse-card {
+    background-color: var(--nav-color);
+    color: #3E5381;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.collapse-card a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: #3E5381;
+}
+
+.collapse-card a:hover {
+    color: #14213d;
+}
+
+.filter-search {
+    margin-bottom: 15px;
+}
+
+.filter-search input {
+    color: var(--desaturated-blue);
+    background-color: var(--nav-color);
+    border: none;
+}
+
+.filter-search button {
+    color: var(--desaturated-blue);
+    background-color: var(--nav-color);
+    border: none;
+}
+
+.filter-search button:hover {
+    color: var(--theme-violet-hover);
+    background-color: white;
+    scale: 1.1;
+    transition: 0.5s ease-in-out;
+}
+
+
+.job-post-button {
+    border: none;
+    background-color: var(--theme-violet);
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 700px;
+    text-align: center;
+}
+
+.job-post-button button {
+    color: white;
+}
+
+.job-post-button:hover {
+    background-color: var(--theme-violet-hover);
+    color: white;
+    transition: 0.6s ease-in-out;
+    scale: 1.03;
+}
+
+.job-post-toast-card {
+    background-color: var(--nav-color);
+    opacity: 1;
+    max-width: 1500px;
+}

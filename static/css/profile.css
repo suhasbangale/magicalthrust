@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+    --pale-blue: hsl(255, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(255, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --desaturated-blue-hover: #929DBC;
+    --dark-blue: hsl(223, 47%, 23%);
+    --hovered-blue: #6C7AFA;
+    --theme-violet: #6828F5;
+    --theme-blue: #0E61FF;
+    --theme-orange: #FF701F;
+    --theme-violet-hover: #8B56FF;
+    --nav-color: #F6F7FF;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.profile-name {
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 30px;
+    color: #14213D;
+    margin-bottom: 15px;
+}
+
+.profile-card-1 {
+    border: none;
+    background-color: var(--nav-color);
+    margin-top: 25px;
+}
+
+.profile-picture {
+    max-width: 115px;
+}
+
+.user-type {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--desaturated-blue);
+}
+
+.follow-info {
+    color: #14213D;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.count {
+    text-decoration: none;
+    color: #14213D;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.count:hover {
+    color: var(--theme-violet);
+    transition: .5s ease-in-out;
+}
+
+.about {
+    margin: 15px 10px 10px 10px;
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--desaturated-blue);
+    text-align: justify;
+}
+
+.profile-buttons {
+    margin-left: 10px;
+}
+
+.follow-button {
+    margin-right: 20px;
+    background-color: var(--nav-color);
+    color: var(--theme-violet);
+    border: 2px solid var(--theme-violet);
+    border-radius: 4px;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 5px 30px;
+}
+
+.follow-button:hover {
+    color: var(--theme-violet-hover);
+    background-color: var(--nav-color);
+    border: 2px solid var(--theme-violet-hover);
+    transition: 0.5s ease-in-out;
+}
+
+.donate-button {
+    margin-right: 20px;
+    background-color: var(--theme-violet);
+    color: var(--nav-color);
+    border: 2px solid var(--theme-violet);
+    border-radius: 4px;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 5px 30px;
+}
+
+.donate-button:hover {
+    background-color: var(--theme-violet-hover);
+    color: var(--nav-color);
+    transition: 0.5s ease-in-out;
+}
+
+
+/* 2nd Row of Cards */
+
+.profile-cards-row {
+    margin-top: 25px;
+}
+
+.card-details {
+    background-color: var(--nav-color);
+    margin-bottom: 25px;
+}
+
+.profile-card-title {
+    color: #14213D;
+    background-color: var(--nav-color);
+    border: none;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.public-link-buttons {
+    background-color: #14213D;
+    color: var(--nav-color);
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.public-link-buttons:hover {
+    background-color: var(--desaturated-blue);
+    color: var(--nav-color);
+    transition: 0.5s ease-in-out;
+}
+
+
+/* .post-image {
+    width: 400px;
+}
+
+.post-list {
+    list-style-type: none;
+} */

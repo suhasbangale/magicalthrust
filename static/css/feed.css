@@ -1,0 +1,69 @@
+
+
+
+
+
+
+
+.your-feed-text {
+    font-size: 13px;
+    color: #7280A7;
+}
+
+.feed-post-card {
+    border: none;
+    margin-bottom: 15px;
+}
+
+.feed-post-card-profile-picture {
+    width: 25px;
+}
+
+.heart-for-like {
+    color: rgb(255, 75, 75);
+    text-decoration: none;
+}
+
+.download-post-button {
+    color: #1F2F56;
+    text-decoration: none;
+}
+
+.post-label {
+    margin-top: 5px;
+}
+
+
+
+
+.suggestions-text {
+    font-size: 13px;
+    color: #7280A7;
+}
+
+.suggestion-box {
+    border: none;
+}
+
+.suggestion-item {
+    margin-bottom: 15px;
+}
+
+.suggestions-profile-photo {
+    width: 35px;
+}
+
+.follow-button {
+    border: none;
+    color: white;
+    background-color: #3b4ef8;
+    padding: 4px 15px 4px 15px;
+    border-radius: 5px;
+    margin-top: 4px;
+}
+
+.follow-button:hover {
+    opacity: 0.8;
+    scale: 1.1;
+    transition: 0.5s ease-in-out;
+}

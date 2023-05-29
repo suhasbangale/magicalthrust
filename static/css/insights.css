@@ -1,0 +1,73 @@
+
+
+:root {
+    --pale-blue: hsl(255, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(255, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+    --hovered-blue: #6C7AFA;
+}
+
+.insights-page-heading {
+    padding-top: 20px;
+    font-weight: 700;
+    color: #14213d;
+}
+
+.insights-page-heading img{
+    width: 55px;
+}
+
+.insights-text-div1 {
+    background-color: #1D2235;
+    color: #F6F7FF;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.insights-para {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--desaturated-blue);
+}
+
+.insights-helpfullness {
+    color: #14213d;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.collapse-button {
+    text-decoration: none;
+    background-color: var(--pale-blue);
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    color: #14213d;
+}
+
+.collapse-card {
+    border: none;
+    background-color: #F6F7FF;
+    color: var(--desaturated-blue);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.all-insights-text {
+    font-size: 15px;
+    color: var(--desaturated-blue);
+}
+
+.chart-div-img {
+    border: none;
+    border-radius: 10px;
+}
+
+.chart-div-img:hover {
+    scale: 1.01;
+    transition: 0.5s ease;
+}

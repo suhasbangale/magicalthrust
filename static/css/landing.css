@@ -1,0 +1,223 @@
+
+
+:root {
+    --pale-blue: hsl(255, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(255, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --desaturated-blue-hover: #929DBC;
+    --dark-blue: hsl(223, 47%, 23%);
+    --hovered-blue: #6C7AFA;
+    --theme-violet: #6828F5;
+    --theme-blue: #0E61FF;
+    --theme-orange: #FF701F;
+    --theme-violet-hover: #8B56FF;
+    --nav-color: #F6F7FF;
+}
+
+
+
+
+.get-started-button {
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    background-color: var(--theme-violet);
+    padding: 8px 20px;
+}
+
+.get-started-button:hover {
+    background-color: var(--theme-violet-hover);
+    scale: 1.03;
+    transition: 0.5s ease-in-out;
+}
+
+.land-quote {
+    color: #14213d;
+    font-weight: 900;
+    font-size: 55px;
+}
+
+.orange-underline {
+    text-decoration: underline orangered;
+}
+
+.white-underline {
+    text-decoration: underline white;
+}
+
+.green-underline {
+    text-decoration: underline lime;
+}
+
+.numbers-section {
+    background-color: #F6F7FF;
+}
+
+.numbers-div {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.numbers-head {
+    font-size: 32px;
+    font-weight: 600;
+    color: #14213d;
+}
+
+.numbers-row {
+    padding-top: 15px;
+}
+
+.numbers-name {
+    color: var(--desaturated-blue);
+}
+
+.numbers-numbers {
+    font-weight: 600;
+    color: #14213d;
+}
+
+/* .cards-head {
+    font-size: 32px;
+    font-weight: 600;
+    color: #14213d;
+} */
+
+.cards-row {
+    padding-top: 20px;
+}
+
+.cards-card1 {
+    background-color: #D8E5FF;
+    border: none;
+}
+
+.card1-button {
+    border: none;
+    background-color: #0E61FF;
+    color: white;
+}
+
+.card1-button:hover {
+    border: 2px solid #0E61FF;
+    color: #0E61FF;
+    transition: 0.5s ease;
+}
+
+.cards-card2 {
+    background-color: #E0D2FF;
+    border: none;
+}
+
+.card2-button {
+    border: none;
+    background-color: #6828F5;
+    color: white;
+}
+
+.card2-button:hover {
+    border: 2px solid #6828F5;
+    color: #6828F5;
+    transition: 0.5s ease;
+}
+
+.cards-card3 {
+    background-color: #FFDFCC;
+    border: none;
+}
+
+.card3-button {
+    border: none;
+    background-color: #FF701F;
+    color: white;
+}
+
+.card3-button:hover {
+    border: 2px solid #FF701F;
+    color: #FF701F;
+    transition: 0.5s ease;
+}
+
+
+
+.card-text {
+    padding-top: 20px;
+}
+
+.card-head {
+    width: 175px;
+}
+
+.cards-img {
+    padding-top: 20px;
+    border-radius: 10px;
+}
+
+
+/* Reviews section */
+.reviews-section {
+    background-color: #F6F7FF;
+}
+
+.reviews-head {
+    padding-top: 20px;
+    font-size: 32px;
+    font-weight: 600;
+    color: #14213d;
+}
+
+.review-card {
+    border: none;
+    background-color: white;
+}
+
+.review-card-name {
+    color: #14213d;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.review-card-text {
+    color: var(--desaturated-blue);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.review-person-about {
+    color: var(--desaturated-blue);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+/* Telegram Community */
+
+.telegram-community-button {
+    border: none;
+    border-radius: 5px;
+    background-color: #0E61FF;
+    color: white;
+}
+
+.telegram-community-button:hover {
+    border: 2px solid #0E61FF;
+    color: #0E61FF;
+    transition: 0.6s ease;
+}
+
+
+.nav-eco-dropdown {
+    border: none;
+    background-color: #F6F7FF;
+    color: var(--desaturated-blue);
+}
+
+.nav-eco-dropdown li a {
+    padding-left: 30px;
+}
+
+.nav-eco-dropdown li a:hover {
+    background-color: #D8E5FF;
+}
